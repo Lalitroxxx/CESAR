@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS/logica.js" ></script>
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+    <title>Cifrado Cesar</title>
+</head>
+<body style="background-color: #5D6D7E;">
+<noscript>
+        <META HTTP-EQUIV="REFRESH" CONTENT="1;URL=error.html">
+</noscript>
+
+    <header class="titulo" width="100%">CIFRADO CESAR</header>
+
+    <p class="enun">Este es un ejemplo super kawaii uwu, del cifrado
+    Cesar, que se encarga de poder cifrar las letras
+    del alfabeto segun sea su posicion.</p>
+
+    <form name='CESAR' id="formulario">
+
+     <h3>TEXTO A CIFRAR O DESCIFRAR</h3>   
+    <input type='text' id="cadena" class='boxi' placeholder='Meensaje a Cifrar' ondrop='return false' onblur="validarTxtarea()">
+    <h3>DESPLAZAMIENTO</h3>
+    <p><input type="number" id="desplazamiento" class='boxi' size="6" placeholder="Ingresa el desplazamiento" ondrop="return false"/></p>
+    <p><button type="button" id="Cifrar">Cifrar</button>     
+        <button type="button" id="Descifrar">Descifrar</button> </p>  
+
+    </form>
+
+    <h3>SU TEXTO CIFRADO ES:</h3>
+    <input type="text" id="resultado" class="boxi" readonly="true"/>
+</body>
+</html>
